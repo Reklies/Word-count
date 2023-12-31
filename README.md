@@ -24,15 +24,18 @@ You can refine the count by cleaning the string prior to splitting or validating
 End program.
 
 ## PROGRAM:
-#Program to find the number of words in a txt file.
+```
+#Pyhton program to find the number of words in a txt file
 #Developed by : Reklies J
-#Reg no:212223110041
-num=0
-with open("file.txt","r") as f1:
-for i in f1:
-word=i.split()
-num+=len(word)
-print("The number of words in the file is ",num)
+#Reg number=212223110041
+fname=input("Enter a file name")
+num_words=0
+with open(fname, 'r') as f:
+    for line in f :
+        words = line.split()
+        num_words += len(words)
+    print("Number of words: ",num_words)
+```
 ### OUTPUT:
 ![Screenshot 2023-12-31 221749](https://github.com/Reklies/Word-count/assets/147139232/36b926e0-f8c7-4375-bd8a-41cbb00adc3f)
 
